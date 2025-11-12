@@ -18,13 +18,11 @@ public class Cheers {
             for (int i=0; i<word.length(); i++) {
                 char letter = word.charAt(i);
 
-                String article = "a";
-
                 if (anLetters.indexOf(letter) >= 0) {
-                        article = "an";
-                }
-
-                System.out.println("Give me " + article + " " + letter + ": " + letter + "!");
+                System.out.println("Give me an " + letter + ": " + letter + "!");
+            } else {
+                System.out.println("Give me a  " + letter + ": " + letter + "!");
+            }
             }
 
             System.out.println("What does that spell?");
